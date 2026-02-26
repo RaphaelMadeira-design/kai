@@ -1,9 +1,9 @@
 {
   "menu": {
     "character": "Character Sheet",
-    "power": "Power Page",
-    "story": "Story",
-    "relations": "Relations"
+    "power": "Shokan & Techniques",
+    "story": "Character Background",
+    "relations": "Relationships"
   },
   "character": {
     "title": "Kai Kusanagi",
