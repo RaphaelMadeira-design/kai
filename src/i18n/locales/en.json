@@ -2,151 +2,146 @@
   "menu": {
     "character": "Character Sheet",
     "power": "Power Page",
-    "story": "Story"
+    "story": "Story",
+    "relations": "Relations"
   },
   "character": {
     "title": "Kai Kusanagi",
     "cardName" : "Kai Kusanagi",
-    "roleplay" : "RP Profile",
+    "roleplay" : "Profil RP",
     "info": {
       "age": "Age",
-      "origin": "Origin",
-      "role": "Role",
+      "race": "Race",
       "rank": "Rank",
       "voice" : "Voice",
-      "ageValue": "20",
-      "originValue": "Kitakyūshū",
-      "roleValue": "Student",
-      "rankValue": "I",
+      "ageValue": "28 years",
+      "raceValue": "Human",
+      "rankValue": "D",
       "voiceValue": "/audio/voice.mp3"
     },
     "intro": {
       "resumeTitle": "Synopsis",
       "resumeContent": [ 
-        "Hardworking, calm, and deeply kind, Kai is the perfect embodiment of quiet strength; powerful yet controlled, determined yet humble above all.",
-        "Despite the power and practicality offered by his gift, he shows exemplary restraint and sees it as a tool rather than what defines him, much like his condition. Kai is a reliable and down-to-earth man, who aspires to a simple life, away from the spotlight and the turmoil of the daily life of a renowned hunter."
+        "Hardworking, calm and deeply caring, Kai is the perfect embodiment of quiet strength; powerful yet controlled, determined but humble above all.",
+        "Despite the power and practicality offered by his gift, he shows exemplary restraint and sees it as a tool rather than what defines him, much like his illness. Kai is a reliable and down-to-earth man, who aspires to a simple life, away from the spotlight and the tumult that accompanies the daily life of a Flaw Hunter."
       ],
       "resumeLine": "Even chaos has its rhythm.",
       "title": "Introduction",
       "content": [
-        "Kai Kusanagi is a student currently enrolled in his third year at Shin’en Academy. He comes from a fairly modest family with no notable history in spirit hunting or the use of soul-linked artifacts named Jinki, yet he stands out as a powerfull and promising spirit hunter.",
-        "Unlike the majority of students at the academy, whose goal is to become the best hunters and protect the world, Kai joined Shin’en with a primarily personal motivation : to strengthen his control over his power and to stabilize the condition that has afflicted him since early childhood.",
-        "His Jinki is closely linked to his condition, and the power it grants, while formidable, always carries significant risks to his health. For this reason, Kai exercises caution and discipline in its use, constantly seeking to better understand his abilities and employ them wisely.",
-        "He is a confident student, yet always willing to learn more in order to become the best version of himself. His approachable personality and steadfast determination make him a well-regarded peer on campus, and it is not uncommon to see him accompanied by other students or lending a hand where needed."
+        "Kai Kusanagi is the enigmatic manager of Kaiketsu-ya, a problem-solving office that is located in a discreet alley of the japanese capital city. A priest with questionable faith and a handyman, he wears many hats within the human community, offering his help and all kind of services to those in need, although he may sometimes work for certain clan members as well.",
+        "He takes on contracts of all kinds, ranging from simple object retrieval to escorting people, to more perilous missions; as long as the client pays and the cause seems just to him. Although he is a man of the church, Kai is not particularly religious and does not follow the precepts of faith to the letter, preferring to rely on his own judgment and personal morality to guide his life and actions. "
       ]
     },
-    "likes": {
-      "title": "Likes",
-      "1": "Night walks",
-      "2": "Grilled meat",
-      "3": "Stray animals",
-      "4": "Parkour"
+    "desires": {
+      "title": "Wants",
+      "content": [
+        "He hopes to restore dignity and glory to humanity. Kai aspires to a country where humans are no longer in the background and no longer subject to clan control. He also wishes to learn more about the Shokans and their true nature."
+      ]
     },
-    "dislikes": {
-      "title": "Dislikes",
-      "1": "Needless violence",
-      "2": "Occult practices",
-      "3": "Public transportation",
-      "4": "Seafood"
+    "fears": {
+      "title": "Fears",
+      "content": [
+        "He fears that the influence of the clans will become so great that humans lose all autonomy and are reduced to the state of puppets. He also fears that the Shokans will become a source of conflict and fracture between knights."
+      ]
     },
     "attributes": {
       "title": "Attributes",
       "health": "Health Points",
       "hp": "HP",
       "energy": "Energy Points",
-      "ep": "Energy"
+      "ep": "EP"
     },
     "statistics": {
       "title": "Statistics",
       "power": "Power",
-      "stamina": "Stamina",
-      "mastery": "Mastery",
-      "range": "Range",
+      "defense": "Defense",
+      "shokan": "Shokan",
       "speed": "Speed",
-      "defense": "Defense"
+      "health": "Health",
+      "stamina": "Stamina",
+      "experience": "Experience"
     },
     "physical": {
       "title": "Physical Description",
       "content": [
-        "Kai is 1.82 meters tall and weighs 75 kilograms, possessing a rather average yet athletic physique.",
-        "He has short carmine hair styled with a few strands that falls naturally forward, framing his forehead. He has a calm gaze, with purple almond-shaped eyes with a beauty mark under his left eye.",
-        "His clothing style is simple and comfortable, yet practical."
-    ]
+        "Standing at 1.93m and weighing nearly 90kg, Kai is a man with an imposing build, with broad shoulders, long legs and particularly developed musculature. He has short black hair styled with some strands that naturally fall forward. He has a piercing gaze, with almond-shaped, amber and shiny eyes.",
+        "In terms of clothing, he wears a shirt with a clerical collar, fitted pants and high boots. He also has a long dark coat that reaches his knees, which he wears on his shoulders.",
+        "Tattoo/scar: Kai wears a mark applied with iron on the back of his right hand, hidden under his black glove."
+      ]
     },
     "psychological": {
       "title": "Psychological Profile",
       "content": [
-        "Kai is a calm, composed, and naturally kind young man. He is seen as someone helpful and reliable, always ready to lend a hand without ever expecting anything in return.", 
-        "He is a hard worker who firmly believes that merit comes from effort rather than talent and respects those who show perseverance.",
-        "His formidable power has taught him restraint and a certain sense of responsibility."
+        "Calm, stoic and thoughtful, Kai is a self-assured man who shows great self-control. This independent character can make him seem distant or cold, but he is actually very empathetic and attentive.",
+        "Qualities: In addition to being persevering and having unwavering determination, Kai is able to keep his cool in any circumstance. He is naturally caring and protective even if he hides it.",
+        "Flaws: He is difficult to bond with because he is very secretive and does not easily trust. He does not mince his words and can sometimes be too direct, which can hurt. Kai also has very little sense of humor."
       ]
     },
     "power": {
       "intro": {
-        "title": "Soul Link",
+        "title": "Description",
         "content": [
-          "Dissonance is neither a legacy artifact passed down through generations nor a gift given by someone dear to him. It is an object lost, which Kai discovered by chance when he was just a child.",
-          "At first a simple decorative object, the soul link was established during an essential tremor crisis that caused a cardiac arrhythmia in the invalid child. Held tightly in the hollow of his hand in an instinctive and desperate gesture, the tuning fork began to vibrate and resonate with the boy's body to calm spasms and recalibrate his heart rhythm, saving him from an inevitable end. Since then, this object has the particularity of greatly mitigating the symptoms of his essential tremor, which he has suffered since birth.",
-          "This Jinki allows its user to generate, focus, and control vibrations in the air or any surrounding medium within a 10-meter radius around them. Its primary use is to amplify, redirect, or distort mechanical waves — whether seismic, sound-based, or pressure-related — in order to strike, repel, protect, or alter matter from a distance. Kai can release powerful shockwaves and weaken the integrity of even the most durable materials. The vibrations they generate can also affect friction between two surfaces, enabling them to increase or decrease adhesion in order to influence movement, sliding, or the stability of an object or even a person.",
-          "To manifest these abilities, Kai must first strike the tuning fork with his finger or against a surfacegit  to create a base vibration, which he can then manipulate at will. This provokes a blur around his silhouette, accompanied by a faint buzzing sound audible nearby."
+          "Dissonance n'est ni un artefact passé de génération en génération, ni un cadeau offert par quelqu'un qui lui est cher. Il s'agit d'un objet égaré, qu'Kai a découvert par hasard lorsqu'il n'était qu'un enfant.",
+          "D'abord simple objet décoratif, le lien d'âme s'est établi lors d'une crise de tremblement essentiel qui avait provoqué une arythmie cardiaque chez l'enfant invalidante. Serré dans le creux de sa main dans un geste instinctif et désespéré, le diapason s'est mis à vibrer et entrer en résonance avec le corps du garçon pour calmer les spasmes et recalibrer son rythme cardiaque, le sauvant d'une fin inévitable. Depuis, cet objet a la particularité d'aténuer en grande partie les symptômes du tremblement essentiel dont il souffre depuis la naissance.",
+          "Ce jinki permet à son porteur de générer, concentrer et contrôler des vibrations dans l’air ou tout autre milieu environnant, dans un rayon de 10 mètres autour de lui. Son usage principal consiste à amplifier, rediriger ou déformer les ondes mécaniques afin de frapper, repousser, se protéger ou même altérer la matière à distance à un niveau atomique. Kai peut libérer de puissantes ondes de choc et affaiblir l’intégrité même des matériaux les plus résistants. Les vibrations générées peuvent également affecter la friction entre deux surfaces, lui permettant d’augmenter ou de réduire l’adhérence afin d’influencer les déplacements, le glissement ainsi que la stabilité d’un objet ou d’une personne.",
+          "Pour manifester son pouvoir, il frappe son diapason du doigt ou contre une surface pour générer une vibration initiale qu'il peut ensuite modeler et manipuler à volonté. Ceci provoque un flou autour de sa silhouette, accompagné d'un léger bourdonnement audible à proximité."
         ]
       },
-      "limitsDesc": "Manipulating his Jinki exerts extreme strain on the mind and the body. In addition to the natural fatigue associated with its use, prolonged use of this power causes migraines accompanied by incapacitating dizziness. If misused, it weakens the bone structure to the point of causing fractures, and sensory organs suffer progressive internal damage.",
+      "limitsDesc": "Manipuler son Jinki exerce une contrainte extrême sur le corps. En plus de la fatigue naturelle liée à son utilisation, une utilisation prolongée de ce pouvoir provoque des migraines accompagnées de vertiges. Mal utilisé, il fragilise la structure osseuse jusqu'à provoquer des fractures et les organes sensoriels subissent des lésions internes progressives.",
       "jinki": {
-        "title": "Jinki",
-        "explanation": "A hardened steel tuning fork, a few centimeters in length. When struck, it emits a sharp, piercing chime that resonates for several minutes."
+        "title": "Shokan",
+        "explanation": "Un diapason en acier trempé de quelques centimètres. Il émet un tintement aigu qui résonne pendant plusieurs minutes quand on frappe dessus."
       },
-      "title": "Power",
-      "nameLabel": "Name",
-      "name": "Dissonance",
-      "masteryLabel": "Mastery",
-      "mastery": "Good"
+      "title": "Pouvoir",
+      "nameLabel": "Nom",
+      "name": "Pression",
+      "masteryLabel": "Type",
+      "mastery": "Élementaire"
     },
     "abilities": {
-      "title": "Abilities",
+      "title": "Techniques",
       "spells": {
-        "damage" : "DMG",
+        "damage": "DGT",
         "DEF" : "DEF",
-        "ultLabel": "Ultimate",
-        "passiveLabel": "Passive",
+        "passiveLabel": "Passif",
         "1": {
           "name": "Shōgeki-Ha",
-          "desc": "Launches a powerful fist-sized shockwave up to 10 meters in a straight line, capable of repelling or unbalancing enemies."
+          "desc": "Projette une onde de choc de la taille d’un poing sur une distance maximale de 10 mètres en ligne droite, capable de repousser ou déséquilibrer ses ennemis."
         },
         "2": {
           "name": "Shindō Kekkai",
-          "duration": "2 turns",
-          "desc": "Forms a barrier of vibrations solidifying the air around his body, which can partially absorb or disperse a physical or spiritual attack."
+          "duration": "2 tours",
+          "desc": "Forme une barrière de vibrations solidifiant l’air autour de son corps, qui peut en partie absorber ou disperser une attaque physique ou spirituelle."
         },
         "3": {
           "name": "Genkaiten",
-          "duration": "4 turns",
-          "desc": "Injects an unstable vibration at contact, creating a critical point of 15cm in diameter. Damage received in this area is increased."
+          "duration": "4 tours",
+          "desc": "Injecte une vibration instable à son contact, créant un point critique de 15cm de diamètre. Les dégâts reçus dans cette zone sont augmentés."
         },
         "4": {
           "name": "Kyōmei Tekiken",
-          "duration": "4 turns",
-          "desc": "Makes his arms vibrate at such a high frequency that they become solid and sharp, capable of cutting through matter and Spirits on direct contact."
+          "duration": "4 tours",
+          "desc": "Fait vibrer ses bras à une fréquence si élevée qu’ils deviennent solides et tranchants, capables de découper la matière et les Fléaux au contact direct."
         },
         "5": {
           "name": "Kansatsu",
-          "duration": "1 turn",
-          "desc": "Focuses on vibrations in the air and ground to perceive the slightest movements and presences, without needing to see or hear."
+          "duration": "1 tour",
+          "desc": "Se concentre sur les vibrations dans l’air et le sol pour percevoir les moindres mouvements et présences, sans avoir besoin de voir ou d’entendre."
         },
         "6": {
           "name": "Zen Reishin Retsu-Ha",
-          "desc": "Releases a 2-meter sharp shockwave that cleaves the air, capable of slicing through matter and Spirits along its 10 meters path."
+          "desc": "Libère une onde de choc tranchante de 2 mètres qui fend l’air sur 10 mètres, capable de sectionner la matière et les Fléaux sur sa trajectoire."
         }
       }
     }
   },
   "story": {
-    "title": "Story Mode",
-    "next": "Next",
-    "back": "Back",
-    "start": "Start Story"
+    "title": "Mode Histoire",
+    "next": "Suivant",
+    "back": "Retour",
+    "start": "Commencer l'Histoire"
   },
   "loading": {
-    "text": "Initializing"
+    "text": "Initialisation"
   }
 }

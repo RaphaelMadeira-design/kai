@@ -29,6 +29,18 @@
   padding-top: 2rem;
 }
 
+.character-container-power {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .character-left {
   display: flex;
   flex-direction: column;

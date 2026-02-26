@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, Heart, Zap, Swords, Brain, PersonStanding } from 'lucide-react';
+import { ArrowLeft, Heart, Zap, TrendingUp, Brain, PersonStanding } from 'lucide-react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import LanguageToggle from '../components/LanguageToggle';
 import InfoHover from '../components/InfoHover';
@@ -12,55 +12,22 @@ import '../styles/pages/CharacterSheet.scss';
 const CharacterSheet = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [health] = useState(19);
-  const [energy] = useState(14);
-  const [damage] = useState('1d3');
+  const [health] = useState(1000);
+  const [stamina] = useState(1000);
+  const [experience] = useState(1);
 
   const stats = {
-    power: 8,
-    stamina: 4,
-    mastery: 6,
-    range: 5,
-    speed: 4,
-    defense: 7,
+    power: 1,
+    defense: 1,
+    shokan: 1,
+    speed: 1,
   };
 
   const statsData = [
     { stat: t('character.statistics.power'), value: stats.power },
-    { stat: t('character.statistics.stamina'), value: stats.stamina },
-    { stat: t('character.statistics.mastery'), value: stats.mastery },
-    { stat: t('character.statistics.range'), value: stats.range },
-    { stat: t('character.statistics.speed'), value: stats.speed },
     { stat: t('character.statistics.defense'), value: stats.defense },
-  ];
-
-  const likes = [
-    {
-      label: t('character.likes.1'),
-    },
-    {
-      label: t('character.likes.2'),
-    },
-    {
-      label: t('character.likes.3'),
-    },
-    {
-      label: t('character.likes.4'),
-    },
-  ];
-  const dislikes = [
-    {
-      label: t('character.dislikes.1'),
-    },
-    {
-      label: t('character.dislikes.2'),
-    },
-    {
-      label: t('character.dislikes.3'),
-    },
-    {
-      label: t('character.dislikes.4'),
-    },
+    { stat: t('character.statistics.shokan'), value: stats.shokan },
+    { stat: t('character.statistics.speed'), value: stats.speed },
   ];
 
   return (
@@ -75,7 +42,7 @@ const CharacterSheet = () => {
       >
         <ArrowLeft size={24} />
       </motion.button>
-      <div className="character-container">
+      <div className="character-container-sheet">
         <motion.div
           className="character-left"
           initial={{ x: -100, opacity: 0 }}
@@ -89,7 +56,7 @@ const CharacterSheet = () => {
               className="character-image"
             />
             <InfoHover
-              position={{ top: '3%', left: '45%' }}
+              position={{ top: '2%', left: '41%' }}
               title={t('character.psychological.title')}
               content={t('character.psychological.content', { returnObjects: true })}
               icon={Brain}
@@ -117,12 +84,12 @@ const CharacterSheet = () => {
               <span className="clip-value">{t('character.info.ageValue')}</span>
             </div>
             <div className="clip-item">
-              <span className="clip-label">{t('character.info.origin')}</span>
-              <span className="clip-value">{t('character.info.originValue')}</span>
+              <span className="clip-label">{t('character.info.race')}</span>
+              <span className="clip-value">{t('character.info.raceValue')}</span>
             </div>
             <div className="clip-item">
-              <span className="clip-label">{t('character.info.role')}</span>
-              <span className="clip-value">{t('character.info.roleValue')}</span>
+              <span className="clip-label">{t('character.info.rank')}</span>
+              <span className="clip-value">{t('character.info.rankValue')}</span>
             </div>
             <div className="clip-item">
               <span className="clip-label">{t('character.info.voice')}</span>
@@ -140,74 +107,80 @@ const CharacterSheet = () => {
           </div>
           <div className="sectionSplit">
             <div className="split">
-              <h3 className="split-title">{t('character.likes.title')}</h3>
-              <table className="notation-table">
-                <tbody>
-                  {likes.map((item, i) => (
-                    <motion.tr key={i}>
-                      <motion.td
-                        whileHover={{ backgroundColor: '#0099ff', color: '#000' }}
-                        transition={{ duration: 0.25 }}
-                        style={{ padding: '0.4rem 0.6rem' }}
-                      >
-                        {item.label}
-                      </motion.td>
-                    </motion.tr>
-                  ))}
-                </tbody>
-              </table>
+              <h3 className="split-title">{t('character.desires.title')}</h3>
+               <div className="split-text">{t('character.desires.content', { returnObjects: true }).map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
             </div>
             <div className="split"> 
-              <h3 className="split-title">{t('character.dislikes.title')}</h3>
-              <table className="notation-table">
-                <tbody>
-                  {dislikes.map((item, i) => (
-                    <motion.tr key={i}>
-                      <motion.td
-                        whileHover={{ backgroundColor: '#0099ff', color: '#000' }}
-                        transition={{ duration: 0.25 }}
-                        style={{ padding: '0.4rem 0.6rem' }}
-                      >
-                        {item.label}
-                      </motion.td>
-                    </motion.tr>
-                  ))}
-                </tbody>
-              </table>
+              <h3 className="split-title">{t('character.fears.title')}</h3>
+               <div className="split-text">{t('character.fears.content', { returnObjects: true }).map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
             </div>
           </div>
           <div className="section">
             <h3 className="section-title">{t('character.attributes.title')}</h3>
             <div className="attributes-statistics-grid">
               <div className="attributes-left">
-                <div className="attribute-bar health-bar">
-                  <div className="attribute-icon">
-                    <Heart size={32} color="#EF4444" />
+                <div className="attributes-left">
+                  {/* HEALTH */}
+                  <div className="attribute-bar health-bar">
+                    <div className="attribute-header">
+                      <Heart size={18} color='var(--stat-health)' />
+                      <span>{t('character.statistics.health')}</span>
+                      <span className="value">{health}/1000</span>
+                    </div>
+                    <div className="bar-track">
+                      <div
+                        className="bar-fill"
+                        style={{ width: `${(health / 100) * 100}%` }}
+                      />
+                    </div>
                   </div>
-                  <div className="attribute-value">{health}</div>
-                </div>
-                <div className="attribute-bar energy-bar">
-                  <div className="attribute-icon">
-                    <Zap size={32} color="#3B82F6" />
+
+                  {/* STAMINA */}
+                  <div className="attribute-bar stamina-bar">
+                    <div className="attribute-header">
+                      <Zap size={18} color='var(--stat-stamina)' />
+                      <span>{t('character.statistics.stamina')}</span>
+                      <span className="value">{stamina}/1000</span>
+                    </div>
+                    <div className="bar-track">
+                      <div
+                        className="bar-fill"
+                        style={{ width: `${(stamina / 100) * 100}%` }}
+                      />
+                    </div>
                   </div>
-                  <div className="attribute-value">{energy}</div>
-                </div>
-                <div className="attribute-bar damage-bar">
-                  <div className="attribute-icon">
-                    <Swords size={32} color="#3bf66dff" />
+
+                  {/* EXPERIENCE */}
+                  <div className="attribute-bar experience-bar">
+                    <div className="attribute-header">
+                      <TrendingUp size={18} color='var(--stat-experience)' />
+                      <span>{t('character.statistics.experience')}</span>
+                      <span className="value">{experience}/6000</span>
+                    </div>
+                    <div className="bar-track">
+                      <div
+                        className="bar-fill"
+                        style={{ width: `${(experience / 100) * 100}%` }}
+                      />
+                    </div>
                   </div>
-                  <div className="attribute-value">{damage}</div>
                 </div>
               </div>
               <div className="statistics-right">
-                <ResponsiveContainer width="100%" height={350}>
-                  <RadarChart cx="50%" cy="50%" outerRadius="90%" data={statsData}>
+                <ResponsiveContainer width="100%" height={275}>
+                  <RadarChart cx="50%" cy="50%" outerRadius="85%" data={statsData}>
                     <PolarGrid 
                       radialLines={true} 
                     />
                     <PolarAngleAxis 
                       dataKey="stat" 
-                      tick={{ fill: 'var(--color-accent-lime)', fontSize: 15, fontWeight: 400 }} 
+                      tick={{ fill: 'var(--color-accent-lime)', fontSize: 14, fontWeight: 400 }} 
                     />
                     <PolarRadiusAxis 
                       tick={false}

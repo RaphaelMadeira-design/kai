@@ -16,7 +16,7 @@ const InfoHover = ({ position, title, content, icon : Icon }) => {
         className="info-icon"
         whileHover={{ scale: 1.2 }}
       >
-        <Icon size={24} />
+        <Icon size={18} />
       </motion.div>
 
       <AnimatePresence>

@@ -14,6 +14,7 @@ const HomePage = () => {
     { key: 'character', path: '/character', label: t('menu.character') },
     { key: 'power', path: '/power', label: t('menu.power') },
     { key: 'story', path: '/story', label: t('menu.story') },
+    { key: 'relations', path: '/relations', label: t('menu.relations') },
   ];
 
   return (
@@ -96,7 +97,6 @@ const HomePage = () => {
           {t('character.roleplay')}
           </motion.p>
         </motion.div>
-
         <motion.div
           className="menu-section"
           initial={{ y: 50, opacity: 0 }}
@@ -123,8 +123,6 @@ const HomePage = () => {
             </motion.button>
           ))}
         </motion.div>
-
-        {/* Bottom decorative element */}
         <motion.div
           className="bottom-decoration"
           initial={{ opacity: 0, y: 20 }}
@@ -132,7 +130,7 @@ const HomePage = () => {
           transition={{ delay: 1 }}
         >
           <div className="decoration-line" />
-          <div className="decoration-text">BLUE RIVER UNIVERSITY</div>
+          <div className="decoration-text">SHOKAN NO KISHI</div>
           <div className="decoration-line" />
         </motion.div>
       </motion.div>

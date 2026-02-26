@@ -34,7 +34,7 @@ const PowerPage = () => {
         <ArrowLeft size={24} />
       </motion.button>
 
-      <div className="character-container">
+      <div className="character-container-power">
         
         <motion.div
           className="character-left"
@@ -87,10 +87,6 @@ const PowerPage = () => {
             <div className="clip-item">
               <span className="clip-label">{t('character.power.nameLabel')}</span>
               <span className="clip-value">{t('character.power.name')}</span>
-            </div>
-            <div className="clip-item">
-              <span className="clip-label">{t('character.info.rank')}</span>
-              <span className="clip-value">{t('character.info.rankValue')}</span>
             </div>
             <div className="clip-item">
               <span className="clip-label">{t('character.power.masteryLabel')}</span>
