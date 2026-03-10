@@ -13,12 +13,10 @@ const PowerPage = () => {
   const [hovered, setHovered] = useState(null);
 
   const spells = [
-    { key: '1', image: '/images/spell-1.jpg', keyBind: '1', isDamage: true },
-    { key: '2', image: '/images/spell-2.jpg', keyBind: '2', isDamage: false, statBuff: { stat: 'DEF', value: 2 } },
-    { key: '3', image: '/images/spell-3-2.jpg', keyBind: '3', isDamage: false, statDebuff: { stat: 'DEF', value: -2 }},
-    { key: '4', image: '/images/spell-4.jpg', keyBind: '4', isDamage: true},
-    { key: '5', image: '/images/spell-5.jpg', keyBind: '5', isDamage: false},
-    { key: '6', image: '/images/spell-6.jpg', keyBind: '6', isDamage: true, isUlt:true},
+    { key: '1', image: '/images/spell-1.jpg', keyBind: '1', isDamage: false, unlocked: true, statBuff: { stat: 'STR', value: 100 } },
+    { key: '2', image: '/images/spell-2.jpg', keyBind: '2', isDamage: false, unlocked: false},
+    { key: '3', image: '/images/spell-3.jpg', keyBind: '3', isDamage: false, unlocked: false},
+    { key: '4', image: '/images/spell-4.jpg', keyBind: '4', isDamage: false, unlocked: false},
   ];
 
   return (
@@ -45,36 +43,6 @@ const PowerPage = () => {
           <div className="character-image-wrapper">
             <HolographicCard />
         </div>
-          <div className="section">
-            <h3 className="section-title">{t('character.power.jinki.title')}</h3>
-
-            <div
-              className="jinki-image-wrapper"
-            >
-              <img
-                src="/images/diapason.png"
-                alt="Jinki Diapason"
-                className="jinki-image"
-                onMouseEnter={() => setHovered('jinki')}
-                onMouseLeave={() => setHovered(null)}
-              />
-
-              <AnimatePresence>
-                {hovered === 'jinki' && (
-                  <motion.div
-                    className="tooltip"
-                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                    transition={{ duration: 0.25, ease: 'easeOut' }}
-                  >
-                    {t('character.power.jinki.explanation')}
-                    <span className="tooltip-arrow" />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
@@ -89,8 +57,8 @@ const PowerPage = () => {
               <span className="clip-value">{t('character.power.name')}</span>
             </div>
             <div className="clip-item">
-              <span className="clip-label">{t('character.power.masteryLabel')}</span>
-              <span className="clip-value">{t('character.power.mastery')}</span>
+              <span className="clip-label">{t('character.power.typeLabel')}</span>
+              <span className="clip-value">{t('character.power.type')}</span>
             </div>
           </div>
 
@@ -110,20 +78,26 @@ const PowerPage = () => {
               </div>
             </div>
           </div>
+        </motion.div>
 
+        <motion.div
+          className="character-spells"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
           <div className="section">
-            <h3 className="section-title">{t('character.abilities.title')}</h3>
-            <div className="spells-grid">
-              {spells.map((spell) => {
-                return (
-                  <motion.div
-                    key={spell.key}
-                    className={`spell-card ${spell.isUlt ? 'ultimate' : ''} ${spell.isPassive ? 'passive' : ''}`}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 0.05 }}
-                    whileHover={{ scale: 1.025 }}
-                  >
-                    <div className="spell-content">
+              <h3 className="section-title">{t('character.abilities.title')}</h3>
+              <div className="spells-grid">
+                {spells.map((spell) => {
+                  return (
+                    <motion.div
+                      key={spell.key}
+                      className={`spell-card ${spell.isUlt ? 'ultimate' : ''} ${spell.isPassive ? 'passive' : ''} ${!spell.unlocked ? 'locked' : ''}`}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.05 }}
+                      whileHover={{ scale: 1.025 }}
+                    >
                       <div className="spell-icon">
                         <img
                           src={spell.image}
@@ -132,50 +106,51 @@ const PowerPage = () => {
                         />
                         <div className="spell-keybind">{spell.keyBind}</div>
                       </div>
-                      <div className="spell-stats">
-                        {spell.isUlt && (
-                          <span className="spell-label spell-label--ultimate">
-                            {t('character.abilities.spells.ultLabel', 'Ultime')}
-                          </span>
-                        )}
-                        {['2','3','4','5'].includes(spell.key) && (
-                          <span className="spell-label spell-label--duration">
-                            <Hourglass size={14} />
-                            {t(`character.abilities.spells.${spell.key}.duration`)}
-                          </span>
-                        )}
-                         {spell.isDamage && (
-                          <div className="spell-label spell-label--damage">
-                            <Swords size={14} />
-                            <span>
-                              {spell.damage} {t('character.abilities.spells.damage')}
-                            </span>
+                      <div className="spell-content">
+                        <div className="spell-content--information">
+                          <div className="spell-content--information-label">
+                            {t(`character.abilities.spells.${spell.key}.name`)}
                           </div>
-                        )}
-                        {spell.statBuff && (
-                          <span className="spell-label spell-label--buff">
-                            <ArrowUp size={14} />
-                            {`+${spell.statBuff.value} ${t(
-                              `character.abilities.spells.${spell.statBuff.stat}`
-                            )}`}
-                          </span>
-                        )}
-                        {spell.statDebuff && (
-                          <span className="spell-label spell-label--debuff">
-                            <ArrowDown size={14} />
-                            {`${spell.statDebuff.value} ${t(
-                              `character.abilities.spells.${spell.statDebuff.stat}`
-                            )}`}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    <div className="spell-info">
-                      <div className="spell-name">
-                        {t(`character.abilities.spells.${spell.key}.name`)}
-                      </div>
-                      <div className="spell-desc">
-                        {t(`character.abilities.spells.${spell.key}.desc`)}
+                          <div className="spell-content--information-stats">
+                            {spell.isUlt && (
+                              <span className="spell-label spell-label--ultimate">
+                                {t('character.abilities.spells.ultLabel', 'Ultime')}
+                              </span>
+                            )}
+                            {['1','5'].includes(spell.key) && (
+                              <span className="spell-label spell-label--duration">
+                                <Hourglass size={14} />
+                                {t(`character.abilities.spells.${spell.key}.duration`)}
+                              </span>
+                            )}
+                            {spell.isDamage && (
+                              <div className="spell-label spell-label--damage">
+                                <Swords size={14} />
+                                <span>
+                                  {spell.damage} {t('character.abilities.spells.damage')}
+                                </span>
+                              </div>
+                            )}
+                            {spell.statBuff && (
+                              <span className="spell-label spell-label--buff">
+                                <ArrowUp size={14} />
+                                {`+${spell.statBuff.value} ${t(
+                                  `character.abilities.spells.${spell.statBuff.stat}`
+                                )}`}
+                              </span>
+                            )}
+                            {spell.statDebuff && (
+                              <span className="spell-label spell-label--debuff">
+                                <ArrowDown size={14} />
+                                {`${spell.statDebuff.value} ${t(
+                                  `character.abilities.spells.${spell.statDebuff.stat}`
+                                )}`}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                        <div className="spell-content--description">
+                          {t(`character.abilities.spells.${spell.key}.desc`)}
                       </div>
                     </div>
                   </motion.div>

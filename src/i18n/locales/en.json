@@ -92,11 +92,13 @@
         "title": "Shokan",
         "explanation": "Un diapason en acier trempé de quelques centimètres. Il émet un tintement aigu qui résonne pendant plusieurs minutes quand on frappe dessus."
       },
-      "title": "Pouvoir",
-      "nameLabel": "Nom",
-      "name": "Pression",
-      "masteryLabel": "Type",
-      "mastery": "Élementaire"
+      "title": "Shokan",
+      "nameLabel": "Name",
+      "name": "Remanence",
+      "TypeLabel": "Type",
+      "type": "Sharpened",
+      "weaponLabel": "Weapon",
+      "weapon": "Nodachi"
     },
     "abilities": {
       "title": "Techniques",

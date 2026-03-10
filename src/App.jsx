@@ -50,7 +50,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/character" element={<CharacterSheet />} />
-          <Route path="/" element={<PowerPage />} />
+          <Route path="/power" element={<PowerPage />} />
           <Route path="/" element={<StoryPage />} />
           <Route path="/" element={<StoryPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
