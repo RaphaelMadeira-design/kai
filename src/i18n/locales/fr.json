@@ -28,7 +28,7 @@
       "resumeLine": "Qui choisit les cartes choisit la victoire.",
       "title": "Introduction",
       "content": [
-        "Kai Kusanagi est le gérant énigmatique de Kaiketsu-ya, un bureau de résolution de problèmes situé dans une ruelle discrète de la capitale. Prêtre à la foi discutable et homme à tout faire, il revêt de nombreuse casquettes au sein de la communauté humaine, offrant son aide et ses services à ceux qui en ont besoin, bien qu'il lui puisse lui arriver de travailler pour certains membres de clans.",
+        "Kai Kusanagi est le gérant énigmatique de Kaiketsu-ya, un bureau de résolution de problèmes situé dans une ruelle discrète de la capitale. Prêtre à la foi discutable et homme à tout faire, il revêt de nombreuses casquettes au sein de la communauté humaine, offrant son aide et ses services à ceux qui en ont besoin, bien qu'il lui puisse lui arriver de travailler pour certains membres de clans.",
         "Il effectue des contrats de toutes sortes, allant de la simple récupération d'objets à l'escorte de personnes, en passant par des missions plus périlleuses ; du moment que le client paie et que la cause lui semble juste. Bien qu'il soit un homme d'église, Kai n'est pas particulièrement religieux et ne suit pas les préceptes de la foi à la lettre, préférant se fier à son propre jugement et à sa morale personnelle pour guider sa vie et ses actions. "
       ]
     },
@@ -87,10 +87,6 @@
         ]
       },
       "limitsDesc": "Ce Shokan reste toutefois fortement limité par le niveau et le rang du chevalier, qui déterminent le nombre d’arcanes majeurs qu’il peut utiliser. Les cartes deviennent inefficaces lorsqu’elles s’éloignent à plus de 15 mètres de leur porteur. Au-delà de cette distance, elles disparaissent automatiquement pour réapparaître dans la main de l’utilisateur. Enfin, à cause de leur nature tranchante, Kai doit porter un gant de protection pour éviter de se blesser lui-même en les manipulant.",
-      "jinki": {
-        "title": "Shokan",
-        "explanation": "Un diapason en acier trempé de quelques centimètres. Il émet un tintement aigu qui résonne pendant plusieurs minutes quand on frappe dessus."
-      },
       "title": "Shokan",
       "nameLabel": "Nom",
       "name": "Tarot",
