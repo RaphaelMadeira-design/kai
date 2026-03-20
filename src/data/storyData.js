@@ -120,7 +120,7 @@ export const storyData = {
       id: 1,
       character: "Narration",
       text: "Le soleil se couche lentement au-dessus de la capitale.\n\n" +
-            "Depuis près d’une heure, vous arpentez un dédale de rues faiblement éclairées. Le quartier dans lequelle vous vous trouvez, discret en journée, devient l’un des plus animés de la ville lorsque la nuit tombe. Dans votre main, un petit morceau de papier se froisse légèrement et une adresse y est inscrite — la raison de votre présence ici.\n\n" +
+            "Depuis près d’une heure, vous arpentez un dédale de rues faiblement éclairées. Le quartier dans lequel vous vous trouvez, discret en journée, devient l’un des plus animés de la ville lorsque la nuit tombe. Dans votre main, un petit morceau de papier se froisse légèrement et une adresse y est inscrite — la raison de votre présence ici.\n\n" +
             "Vous tournez au coin d’une nouvelle rue plus étroite, à l’écart de l’agitation. Une sensation étrange vous parcourt soudain.\n\n" +
             "Vous le sentez. Vous êtes proche.",
       background: "/images/bg1.jpg",
