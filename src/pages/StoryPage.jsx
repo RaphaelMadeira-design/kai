@@ -100,11 +100,11 @@ const StoryPage = () => {
       </motion.button>
 
       <div className="story-content">
-        {scene.character === "Isen" && (
+        {scene.character === "Kai" && (
             <div className="character-avatar">
               <img
-                src="/images/full.png"
-                alt="Isen"
+                src=""
+                alt=""
               />
             </div>
           )}

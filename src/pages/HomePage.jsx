@@ -14,7 +14,6 @@ const HomePage = () => {
     { key: 'character', path: '/character', label: t('menu.character') },
     { key: 'power', path: '/power', label: t('menu.power') },
     { key: 'story', path: '/story', label: t('menu.story') },
-    { key: 'relations', path: '/relations', label: t('menu.relations') },
   ];
 
   return (

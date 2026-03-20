@@ -3,195 +3,231 @@ export const storyData = {
     {
       id: 1,
       character: "Narrator",
-      text: "The first part of the theoretical course on the birth of the Blights has ended.\n" +
-            "Some students have left their seats to get some fresh air outside, while others prefer the comfort of their chairs.\n" +
-            "You are among those who stay. And so does your neighbor, apparently.",
-      background: "/images/bg1.png",
+      text: "The sun is slowly setting over the capital.\n\n" +
+            "For nearly an hour, you have been walking through a maze of dimly lit streets. The neighborhood you are in, discreet during the day, becomes one of the busiest in the city when night falls. In your hand, a small piece of paper crinkles slightly and an address is written on it — the reason for your presence here.\n\n" +
+            "You turn the corner onto a new, narrower street, away from the hustle and bustle. A strange sensation suddenly runs through you.\n\n" +
+            "You can feel it. You are close.",
+      background: "/images/bg1.jpg",
       choices: null
     },
     {
       id: 2,
       character: "Narrator",
-      text: "You turn slightly towards him. He seems to be rereading his notes. This guy is Isen Hata.\n" +
-            "You've crossed paths with him several times on campus. He's a calm, methodical guy who's always ready to help a fellow student. He's not the type to attract attention, but he's respected for his determination.\n" +
-            "But apart from that and his name, you don't know much about him.\n \n" +
-            "You decide to find out a little more about him.",
-      background: "/images/bg2.png",
-      choices: null
+      text: "A few more steps lead you in front of a new facade.\n\n" +
+            "The building does not particularly stand out from the others that make up the street. Old, discreet, it almost blends in with the alignment of the neighboring buildings. Yet, something catches your eye. Just above the entrance, a wooden sign is hanging under a small lamp. The painted characters are still legible despite the time.\n\n" +
+            "« 解決屋 Kaiketsu-ya », the Problem Solving Bureau.",
+      background: "/images/bg1.jpg",
+      choices: [
+        { text: "Check that it is indeed the address", next: 3 },
+        { text: "Enter without waiting", next: 4 }
+      ]
     },
     {
       id: 3,
-      character: "Isen",
-      text: "“I come from Kitakyushu, in the south of the country. A rather quiet port city, with a lot of history and traditions, and far from the chaos of the big capitals. I grew up dreaming of new horizons but I have to admit that now, I miss it a little.”",
-
-      background: "/images/bg2.png",
-      choices: [
-        { text: "Learn more about his family", next: 4 },
-        { text: "Inquire about his Jinki", next: 5 }
-      ]
+      character: "Narrator",
+      text: "You hesitate for a moment and wait in front of the building. \n\n" +
+            "The facade bears the marks of the years, but the light filtering through the fogged windows allows you to see a silhouette on the other side. Your gaze slowly scans the building, as if to judge its condition… or maybe to gather some courage.\n\n" +
+            "You quickly check that it is indeed the address written on the paper you are holding. But there is no mistake.\n\n" +
+            "After taking a quick look around you, you take a deep breath and approach the door.",
+      background: "/images/bg1.jpg",
+      choices: null
     },
     {
       id: 4,
-      character: "Isen",
-      text: "“What can I say about my family?”\n\n" +
-            "<i>Isen looks up at the ceiling, looking thoughtful.</i>\n\n" +
-            "“My parents both work a lot to pay for my care. So, it's my uncle who mostly raised me. He's a stuntman in B-movies... a real enthusiast, a bit crazy sometimes, but it's thanks to him that I learned to be resourceful and not be afraid to take on challenges.”",
-      background: "/images/bg2.png",
-      choices: [
-        { text: "Inquire about his Jinki", next: 5 },
-        { text: "Question him about the care he receives", next: 6 }
-      ]
+      character: "Narrator",
+      text: "The door slides slowly as you push it and a small bell rings immediately, breaking the calm of the office.\n\n" +
+            "The room is modest, lit by a warm light that contrasts with the cool air of the street. Shelves filled with files and various objects occupy the walls, and the light scent of paper and old wood floats in the air.\n\n" +
+            "Behind a cluttered desk, a man is nonchalantly sitting on his chair. With his feet on the table, he is calmly flipping through a newspaper. The sound of the bell seems to have barely disturbed his reading. Your gaze stops on the newspaper he holds in his hands. You immediately recognize the layout. It’s the one you work for.\n\n" +
+            "After giving you a quick glance as a greeting, the man delicately folds the newspaper before placing it on one of the corners of the desk. Everything suggests that he was expecting you.",
+      background: "/images/bg2.jpg",
+      choices: null
     },
     {
       id: 5,
-      character: "Isen",
-      text: "“My Jinki?”\n\n" +
-      "<i>He grabs a kind of metal pendant around his neck, supported by a simple string.</i>\n\n" +
-      "“It's this little tuning fork. I named it <b>Dissonance</b>. Yeah, I know, it doesn't look like much compared to some students who have full-blown weapons linked to them. But thanks to it, I can sense and manipulate vibrations in addition to channeling myself. The mechanical waves produced by the vibratory effect allow me to do many things; shock waves, manipulate surface friction, weaken matter... It's pretty cool.”",
-      background: "/images/bg2.png",
+      character: "Narrator",
+      text: "You introduce yourself as a journalist and explain the reason for your visit: to conduct an interview.\n\n" +
+            "You work for a local newspaper and, lately, your articles have been highlighting the merchants, artisans and service providers who bring this bustling Tokyo neighborhood to life. It is in this context that you contacted the manager of this establishment… and that you now find yourself face to face with him, at the end of this evening.\n\n" +
+            "After exchanging some formalities with the man, you start this interview to learn more about him and his activity.",
+      background: "/images/bg2.jpg",
       choices: [
-        { text: "Learn more", next: 7 },
-        { text: "Ask his opinion about the academy", next: 8 }
+        { text: "Ask him to introduce himself", next: 6 },
+        { text: "Question him about his activity", next: 7 }
       ]
     },
     {
       id: 6,
-      character: "Isen",
-      text: "“For as far back as I can remember, I've suffered from what doctors call <b>essential tremor</b>. It's a neurological disease that makes the limbs, hands, and sometimes the head shake. They appear mostly when I'm stressed or tired. It's pretty annoying but I'm medicated to reduce its effects. And I feel like my Jinki helps too.”",
-      background: "/images/bg2.png",
+      character: "Kai",
+      text: "« My name is Kai Kusanagi. I was born on August 21, 6061, in Hayama, Kanagawa Prefecture. »\n\n" +
+      "<i>He pauses for a moment, as if to think about what he will say next.</i>\n\n" +
+      "« I grew up in one of the convents of the capital before being sent on a mission to Europe during my adolescence. I returned to Japan at the age of majority and after completing my priesthood. »\n\n" +
+      "<i>A slight silence settles in before he continues.</i>\n\n" +
+      "« Since I am not affiliated with any particular church or parish, I decided to settle here and open this establishment, in order to help those in need. »",
+      background: "/images/bg2.jpg",
       choices: [
-        { text: "Inquire about his Jinki", next: 5 },
-        { text: "Ask his opinion about the academy", next: 8 }
+        { text: "Question him about his activity", next: 7 },
+        { text: "Ask him to tell his story", next: 8 }
       ]
     },
     {
       id: 7,
-      character: "Isen",
-      text: "“I remember finding it on the ground when I was little. It was shining a bit in the sun and it made a little sound that attracted me. It was a strange object, but I kept it. I don't know why, but I felt it was important.”\n\n" +
-      "<i>He slowly squeezes the tuning fork in the palm of his hand.</i>\n\n" +
-      "“It's strange but this object has saved my life, and since that night, my tremors have calmed down. As if this tuning fork was some sort of catalyst that transforms my illness into power.”",
-      background: "/images/bg2.png",
+      character: "Kai",
+      text: "« People often have problems that don't really find their place in the official records of the authorities. So I opened this place thinking it could help them. »\n\n" +
+      "<i>He shrugs slightly.</i>\n\n" +
+      "« As long as the request is legitimate, I do what I can to find a solution. It started with requests to find lost items, escort certain people in trouble... But over time, the requests multiplied and started to change. In a way, you could say that I am a jack of all trades. »",
+      background: "/images/bg2.jpg",
       choices: [
-        { text: "Question him about his illness", next: 6 },
-        { text: "Ask his opinion about the academy", next: 8 }
+        { text: "Ask him to tell his story", next: 8 },
+        { text: "Discuss his status as a Knight", next: 9 }
       ]
     },
     {
       id: 8,
-      character: "Isen",
-      text: "“At first, I came to Shin'en Academy with the goal of mastering my gift in the hope of healing one day, if possible. I know it's a bit selfish, but I've never aspired to become a great hunter or a hero. I don't come from a respected lineage in the field, and I don't have a tragic story related to the Blights.”\n\n" +
-      "<i>He looks up towards the front of the class where the teacher is busy sorting papers.</i>\n\n" +
-      "“Before I started my last year, I did two years of military service. These two years spent studying and interacting with others taught me that maybe I could make a difference too. Maybe I could help other people like me. Maybe my condition is a weapon rather than an illness; a weapon to be used for the future and to get rid of those damn creatures.”",
-      background: "/images/bg2.png",
-      choices: null
+      character: "Kai",
+      text: " <i>He looks at you without blinking. Then after a few seconds of contemplation, he decides to continue.</i>\n\n" +
+      "« As I said earlier, I was educated in a convent. I have no real memories of my parents. I only know that they were not able to raise me as they would have liked. The other children of the convent and the adults who composed it very quickly became my only and true family. »\n\n" +
+      "<i>He quickly looks up to gather his thoughts and memories.</i>\n\n" +
+      "« I never had the vocation to become a man of the church, and the priests quickly realized it. Even after sending me to Europe as a missionary, they understood that I was not really a servant of the Divine. There, I saw the misery and lack of compassion for the most vulnerable. The worst part is that it was exclusively humans. This experience personally marked me and I understood that I could use my gift to try to make a difference. But my elders saw that I had this vocation to help, more particularly Father Hashimura, who still officiates in the area. And upon my return, he convinced me to open this establishment. That's who I am, what Kaiketsu-ya is and what defines me. »",
+      background: "/images/bg2.jpg",
+      choices: [
+        { text: "Discuss the clans", next: 9 },
+        { text: "Thank him for his time", next: 10 }
+      ]
     },
     {
       id: 9,
-      character: "Narrator",
-      text: " The break is coming to an end. \n\n" +
-      "Students are gradually returning to their seats in a familiar cacophony of chairs being pulled and belongings being placed back on their respective desks. \n\n" +
-      "You exchange one last knowing look with Isen. A few words were enough to learn a little more about him, without lifting all the shadows. Many questions remain unanswered... but maybe you'll have the chance to talk again later. \n\n" +
-      "The teacher raises his voice to announce the start of the second part of the course. You straighten up in your seat, ready to listen attentively. As if Isen's convictions had given you a new motivation for your own commitment.",
-      background: "/images/bg1.png",
+      character: "Kai",
+      text: " « What can I say about them that hasn't already been said? »\n\n" +
+      "<i>He lets out a long sigh, trying to measure his next words.</i>\n\n" +
+      "« As a human, I must admit that I am not satisfied with the way the leaders of these clans act. But that doesn't mean that every member is ill-intentioned, some act for the common good and others find themselves swept up by circumstances and power games. You don't choose where you're born, but you can choose how you live. »\n\n" +
+      "<i>He pauses for a moment, as if to think about what he will say next.</i>\n\n" +
+      "« The teachings I received indicated that the clans, with the exception of the Tsukishiro, were abominations of nature and that their existence was a source of corruption. And that it is the duty of an exorcist to oppose them. These writings are frozen in time, at a time when understanding of things was limited. I have learned to live in community without accepting the place that the clans give to humans. I also fight for humans to be able to live their lives without being judged and fearing members of these clans. »",
+      background: "/images/bg2.jpg",
       choices: null
     },
+    {
+      id: 10,
+      character: "Narration",
+      text: "Your watch rings, indicating that the time allotted for this interview is up. \n\n" +
+      "Your exchanges have been fruitful and you have been able to discuss deep topics. You know a little more about this strange character but you haven't been able to lift all the shadows. Maybe you'll have the opportunity to talk again later. \n\n" +
+      "You exchange a handshake with him before taking one last look at the atmosphere of the place to try to engrave in your memory the details that might be useful to you in writing your future article. \n\n" +
+      "You leave the problem-solving office and head into the streets of this small Tokyo neighborhood that never seems to sleep, zigzagging between passersby and regulars of the city's nocturnal pleasures.",
+      background: "/images/bg1.jpg",
+      choices: null
+    }
   ],
   fr: [
     {
       id: 1,
-      character: "Narrateur",
-      text: "La première partie du cours théorique sur la naissance des Fléaux s'est terminée.\n" +
-            "Certains élèves ont quitté leur place pour se rafraîchir à l'extérieur, quand d'autres préfèrent le confort de leur fauteuil.\n" +
-            "Vous faites partie de ceux qui restent. Et votre voisin aussi, visiblement.",
-      background: "/images/bg1.png",
+      character: "Narration",
+      text: "Le soleil se couche lentement au-dessus de la capitale.\n\n" +
+            "Depuis près d’une heure, vous arpentez un dédale de rues faiblement éclairées. Le quartier dans lequelle vous vous trouvez, discret en journée, devient l’un des plus animés de la ville lorsque la nuit tombe. Dans votre main, un petit morceau de papier se froisse légèrement et une adresse y est inscrite — la raison de votre présence ici.\n\n" +
+            "Vous tournez au coin d’une nouvelle rue plus étroite, à l’écart de l’agitation. Une sensation étrange vous parcourt soudain.\n\n" +
+            "Vous le sentez. Vous êtes proche.",
+      background: "/images/bg1.jpg",
       choices: null
     },
     {
       id: 2,
-      character: "Narrateur",
-      text: "Vous vous tournez légèrement vers lui. Il semble être en train de relire ses notes. Ce type, c'est Isen Hata.\n" + 
-            "Vous l’avez déjà croisé à plusieurs occasions dans le campus. C'est un gars calme, méthodique et toujours prêt à aider un camarade. Il n’est pas trop du genre à attirer l’attention, mais il est respecté pour sa détermination.\n" +
-            "Mais à part ça et son nom, vous ne connaissez pas grand chose à son propos.\n \n" +
-            "Vous décidez d'en savoir un peu plus sur lui.",
-      background: "/images/bg2.png",
+      character: "Narration",
+      text: "Quelques pas de plus vous mènent devant une nouvelle façade.\n\n" + 
+            "La bâtisse ne se distingue pas particulièrement des autres qui composent la rue. Ancienne, discrète, elle se fond presque dans l’alignement des bâtiments voisins. Pourtant, quelque chose attire votre regard. Juste au-dessus de l’entrée, une pancarte en bois est suspendue sous une petite lampe. Les caractères peints y sont encore lisibles malgré le temps.\n\n" +
+            "« 解決屋 Kaiketsu-ya », le Bureau de Résolution de Problèmes.",
+      background: "/images/bg1.jpg",
       choices: [
-        { text: "Découvrir ses origines", next: 3 },
-        { text: "Se renseigner sur son Jinki", next: 5 }
+        { text: "Vérifier qu'il s'agit bien de l'adresse", next: 3 },
+        { text: "Entrer sans attendre", next: 4 }
       ]
     },
     {
       id: 3,
-      character: "Isen",
-      text: "« Je viens de Kitakyushu, dans le sud du pays. Une ville portuaire plutôt tranquille, avec beaucoup d'histoire et de traditions, et loin du chaos des grandes capitales. J'y ai grandi en rêvant de nouveaux horizons mais je dois avouer que maintenant, elle me manque un peu. »",
-      background: "/images/bg2.png",
-      choices: [
-        { text: "En apprendre plus sur sa famille", next: 4 },
-        { text: "Se renseigner sur son Jinki", next: 5 }
-      ]
+      character: "Narration",
+      text: "Vous hésitez un moment et attendez devant le bâtiment. \n\n" + 
+            "La façade porte les marques des années, mais la lumière qui filtre à travers les vitres embuées vous fait apercevoir une silhouette de l'autre côté. Votre regard parcourt lentement la bâtisse, comme pour en juger l’état… ou peut-être pour rassembler un peu de courage.\n\n" +
+            "Vous vérifiez rapidement qu'il s'agit bien de l'adresse inscrite sur le papier que vous tenez. Mais il n'y a pas d'erreur.\n\n" +
+            "Après avoir jeté un rapide coup d'œil autour de vous, vous prenez une longue inspiration et approchez de la porte.",
+      background: "/images/bg1.jpg",
+      choices: null
     },
     {
       id: 4,
-      character: "Isen",
-      text: "« Que dire de ma famille ? »\n\n" +
-            "<i>Isen lève les yeux au plafond, l'air pensif.</i>\n\n" +
-            "« Mes parents travaillent tous les deux énormément pour payer mes soins. Du coup, c’est mon oncle qui m’a élevé en grande partie. Il est cascadeur dans des séries B… un vrai passionné, un peu fou parfois, mais c’est grâce à lui que j’ai appris à être débrouillard et à ne pas avoir peur de relever des défis. »",
-      background: "/images/bg2.png",
-      choices: [
-        { text: "Se renseigner sur son Jinki", next: 5 },
-        { text: "L'interroger sur les soins qu'il reçoit", next: 6 }
-      ]
+      character: "Narration",
+      text: "La porte coulisse lentement lorsque vous la poussez et une petite clochette tinte aussitôt, brisant le calme du bureau.\n\n" +
+            "La pièce est modeste, éclairée par une lumière chaude qui contraste avec l’air frais de la rue. Des étagères chargées de dossiers et d’objets divers occupent les murs, et l’odeur légère du papier et du bois ancien flotte dans l’air.\n\n" +
+            "Derrière un bureau désencombré, un homme est installé nonchalamment sur sa chaise. Les pieds posés sur la table, il feuillette tranquillement un journal. Le bruit de la clochette semble à peine avoir troublé sa lecture. Votre regard s’arrête sur le journal qu’il tient entre ses mains. Vous reconnaissez immédiatement la mise en page. C’est celui pour lequel vous travaillez.\n\n" +
+            "Après vous avoir adressé un rapide regard en guise de salutations, l'homme plie délicatement le journal avant de le déposer sur l'un des coins du meuble. Tout porte à croire qu'il vous attendait.",
+      background: "/images/bg2.jpg",
+      choices: null
     },
     {
       id: 5,
-      character: "Isen",
-      text: "« Mon Jinki ? »\n\n" +
-      "<i>Il attrape une sorte de pendentif en métal autour de son cou, soutenu par une simple ficelle.</i>\n\n" +
-      "« C'est ce petit diapason. Je l'ai baptisé <b>Dissonance</b>. Ouais je sais, il paie pas de mine par rapport à celui de certains élèves qui ont carrément des armes liées. Mais grâce à lui, je peux ressentir et manipuler les vibrations en plus de me canaliser. Les ondes mécaniques produites par l'effet vibratoire me permettent de faire plein de choses ; ondes de choc, manipuler la friction des surfaces, fragiliser la matière... C'est plutôt sympa. »",
-      background: "/images/bg2.png",
+      character: "Narration",
+      text: "Vous vous présentez comme journaliste et lui expliquez la raison de votre venue : conduire une interview.\n\n" +
+      "Vous travaillez pour un journal local et, ces derniers temps, vos articles mettent en lumière les commerçants, artisans et prestataires de service qui font vivre ce quartier tokyoïte en pleine expansion. C’est dans ce cadre que vous avez pris contact avec le gérant de cette enseigne… et que vous vous retrouvez désormais face à lui, en cette fin de soirée.\n\n" +
+      "Après avoir échangé quelques formalités avec l'homme, vous débutez cette entrevue pour en apprendre plus sur lui et son activité.",
+      background: "/images/bg2.jpg",
       choices: [
-        { text: "En apprendre davantage", next: 7 },
-        { text: "Demander son avis sur l'académie", next: 8 }
+        { text: "Lui demander de se présenter", next: 6 },
+        { text: "L'interroger sur son activité", next: 7 }
       ]
     },
     {
       id: 6,
-      character: "Isen",
-      text: "« Depuis aussi loin que je m'en souvienne, je souffre de ce que les médecins appellent <b>tremblement essentiel</b>. C'est une maladie neurologique qui fait trembler les membres, les mains et des fois la tête. Ils apparaissent surtout quand je suis stressé ou fatigué. C'est plutôt chiant mais je suis médicamenté pour réduire ses effets. Et puis j'ai l'impression que mon Jinki aide aussi. »",
-      background: "/images/bg2.png",
+      character: "Kai",
+      text: "« Je m'appelle Kai Kusanagi. Je suis né le 21 août 6061, à Hayama, dans la préfecture de Kanagawa. »\n\n" +
+      "<i>Il marque une pause, comme pour réfléchir à ce qu'il va dire ensuite.</i>\n\n" +
+      "« J'ai grandi dans l'un des couvents de la capitale avant d'être missionné en Europe pendant mon adolescence. Je suis rentré au Japon à ma majorité et après avoir effectué ma prêtrise. »\n\n" +
+      "<i>Un léger silence s'installe avant qu'il poursuive.</i>\n\n" +
+      "« Comme je ne suis affilié à aucune église ou paroisse en particulier, j'ai décidé de m'installer ici et ouvrir cet établissement, afin de venir en aide à ceux qui en ont besoin. »",
+      background: "/images/bg2.jpg",
       choices: [
-        { text: "Se renseigner sur son Jinki", next: 5 },
-        { text: "Demander son avis sur l'académie", next: 8 }
+        { text: "L'interroger sur son activité", next: 7 },
+        { text: "Lui demander de raconter son histoire", next: 8 }
       ]
     },
     {
       id: 7,
-      character: "Isen",
-      text: "« Je me souviens l'avoir trouvé par terre quand j'étais petit. Il brillait un peu au soleil et il faisait un petit son qui m'a attiré. C'était un objet étrange, mais je l'ai gardé. Je ne sais pas pourquoi, mais j'avais l'impression qu'il était important. »\n\n" +
-      "<i>Il serre lentement le diapason dans le creux de sa main.</i>\n\n" +
-      "« C'est bizarre, mais cet objet m'a sauvé la vie, et depuis cette nuit, mes tremblements se sont calmés. Comme si ce diapason était une sorte de catalyseur qui transforme ma maladie en pouvoir. »",
-      background: "/images/bg2.png",
+      character: "Kai",
+      text: "« Les gens ont souvent des problèmes qui ne trouvent pas vraiment leur place dans les registres officiels des autorités. Alors j'ai ouvert ce lieu en pensant que cela pourrait les aider. »\n\n" +
+      "<i>Il hausse légèrement les épaules.</i>\n\n" +
+      "« Du moment que la demande est légitime, je fais ce que je peux pour trouver une solution. Ça a commencé avec des demandes pour trouver des objets perdus, escorter certaines personnes en difficulté... Mais avec le temps, les demandes se sont multipliées et ont commencé à changer. D'une certaine manière, on peut dire que je suis un homme à tout faire. »",
+      background: "/images/bg2.jpg",
       choices: [
-        { text: "L'interroger sur sa maladie", next: 6 },
-        { text: "Demander son avis sur l'académie", next: 8 }
+        { text: "Lui demander de raconter son histoire", next: 8 },
+        { text: "Discuter de son statut de Chevalier", next: 9 }
       ]
     },
     {
       id: 8,
-      character: "Isen",
-      text: "« À la base, je suis venu à l'académie Shin'en avec l'objectif de maîtriser mon don dans l'espoir de guérir un jour, si c'est possible. Je sais que c'est un peu égoïste, mais j'ai jamais aspiré à devenir un grand chasseur ou un héros. Je ne viens pas d'une lignée respectée dans le domaine, et je n'ai pas d'histoire tragique en rapport avec les Fléaux. »\n\n" +
-      "<i>Il lève les yeux vers le devant de la classe où le professeur s'affaire à classer des papiers.</i>\n\n" +
-      "« Puis avant d'entamer ma dernière année, j'ai fait deux ans de conscription militaire. Ces deux années passées à étudier et côtoyer les autres, hgm'ont fait comprendre que, moi aussi, je pouvais peut-être faire une différence. Peut-être que je pourrais aider d'autres personnes comme moi. Peut-être que ma condition est une arme plutôt qu'une maladie ; une arme à utiliser pour l'avenir et nous débarasser de ces maudites bestioles. »",
-      background: "/images/bg2.png",
-      choices: null
+      character: "Kai",
+      text: "<i>Il vous observe sans ciller. Puis après quelques secondes de contemplation, il se décide à continuer.</i>\n\n" +
+      "« Comme je l'ai dit plus tôt, j'ai été éduqué dans un couvent. Je n'ai pas de réel souvenirs des mes parents. Je sais seulement qu'ils n'étaient pas en mesure de m'élever comme ils l'auraient voulu. Les autres enfants du couvent et les adultes qui le composaient sont très vite devenus ma seule et véritable famille. »\n\n" +
+      "<i>Il lève rapidement les yeux pour rassembler ses pensées et souvenirs.</i>\n\n" +
+      "« Je n'ai jamais eu pour vocation de devenir un homme d'église, et les prêtres s'en sont très vite rendu compte. Même après m'avoir envoyé en Europe en tant que missionnaire, ils ont compris que je n'étais pas vraiment un serviteur du Divin. Là-bas, j'y ai vu la misère et le manque de compassion pour les plus fragiles. Le pire, c'est qu'il s'agissait exclusivement d'humains. Cette expérience m'a personnellement marqué et j'ai compris que je pouvais utiliser mon don pour tenter de faire la différence. Mais aînés ont vu que j'avais cette vocation d'apporter mon aide, plus particulièrement le Père Hashimura, qui officie encore dans le coin. Et à mon retour, il m'a convaincu d'ouvrir cet établissement. Voilà qui je suis, ce qu'est Kaiketsu-ya et ce qui me définit. »",
+      background: "/images/bg2.jpg",
+      choices: [
+        { text: "Discuter des clans", next: 9 },
+        { text: "Le remercier pour son temps", next: 10 }
+      ]
     },
     {
       id: 9,
-      character: "Narrateur",
-      text: " La pause touche à sa fin. \n\n" +
-      "Les élèves regagnent peu à peu leurs places dans une cacophonie familière de chaises tirées et d’affaires reposées sur leurs pupitres respectifs. \n\n" +
-      "Vous échangez un dernier regard complice avec Isen. Quelques mots ont suffi pour en apprendre un peu plus sur lui, sans pour autant lever toutes les zones d’ombre. Beaucoup de questions restent en suspens… mais peut-être aurez-vous l’occasion de discuter à nouveau plus tard. \n\n" +
-      "Le professeur lève la voix pour annoncer le début de la seconde partie du cours. Vous vous redressez dans votre siège, prêt à écouter attentivement. Comme si les convictions d’Isen vous avaient insufflé une nouvelle motivation à votre propre engagement.",
-      background: "/images/bg1.png",
+      character: "Kai",
+      text: "« Que dire à leur sujet qui n'a pas déjà été dit ? »\n\n" +
+      "<i>Il lâche un long soupir, tentant de mesurer ses prochaines paroles.</i>\n\n" +
+      "« En tant qu'humain, je dois avouer que je ne suis pas satisfait de la manière dont les dirigeants de ses clans agissent. Mais ça ne veut pas dire que chaque membre est mal intentionné, certains agissent pour le bien commun et d'autres se retrouvent emportés par les circonstances et les jeux de pouvoir. On ne choisit pas où on naît, mais on peut choisir comment on vit. »\n\n" +
+      "<i>L'homme se penche au dessus du bureau, comme pour mieux articuler ses mots et être dans la confidence.</i>\n\n" +
+      "« Les enseignements que j'ai reçus indiquaient que les clans, à l'exception des Tsukishiro, étaient des abominations de la nature et que leur existence était une source de corruption. Et qu'il est du devoir d'un exorciste de s'y opposer. Ces écritures sont figées dans le temps, à une époque où la compréhension des choses était limitée. J'ai appris à vivre en communauté sans tout de même accepter la place que les clans donnent aux humains. Je me bats aussi pour que les humains puissent vivre leur vie sans être jugés et craindre les membres de ces clans. »",
+      background: "/images/bg1.jpg",
+      choices: null
+    },
+    {
+      id: 10,
+      character: "Narration",
+      text: " Votre montre sonne, indiquant que le temps accordé à cette interview est écoulé. \n\n" +
+      "Vos échanges ont été fructueux et vous avez pu échanger sur des sujets profonds. Vous en connaissez un peu plus sur cet étrange personnage mais vous n'avez pas réussi à lever toutes les zones d'ombre. Peut-être aurez-vous l'occasion de discuter à nouveau plus tard. \n\n" +
+      "Vous échangez une poignée de main avec lui avant de vous imprégner une dernière fois de l'atmosphère du lieu pour tenter de graver dans votre mémoire les détails qui pourraient vous être utiles dans la rédaction de votre futur article. \n\n" +
+      "Vous quittez le bureau de résolution de problèmes et vous enfoncez dans les rues de ce petit quartier de Tokyo qui ne sembre jamais dormir, zigzaguant entre les passants et les habitués des plaisirs nocturnes de la ville. ",
+      background: "/images/bg1.jpg",
       choices: null
     }
   ]

@@ -51,8 +51,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/character" element={<CharacterSheet />} />
           <Route path="/power" element={<PowerPage />} />
-          <Route path="/" element={<StoryPage />} />
-          <Route path="/" element={<StoryPage />} />
+          <Route path="/story" element={<StoryPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
